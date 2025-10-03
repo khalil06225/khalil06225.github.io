@@ -1,14 +1,56 @@
 h1{
-    color: blueviolet;
+   
+        color: #fff2f2; /* police grise */
+        text-shadow:
+            0 0 5px #000000,
+            0 0 10px #363636,
+            0 0 20px #3b3b3b,
+            0 0 40px rgb(53, 53, 53),
+            0 0 60px #383838,
+            0 0 80px rgb(61, 61, 61);
+        font-family: 'Arial', sans-serif;
+    
+}
+
+
+
+
+
+
+
+/* Vidéo en fond plein écran */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenu au-dessus */
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 img{
     width: 15%;
     position: absolute;
     right: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(26, 25, 25);
+    box-shadow: 0 10px 17px rgb(0, 0, 0);
 }
 
-body {
-    background-color: #2fdcf3;
-    font-family: Arial, sans-serif;
+
+
+li {
+    color: rgb(250, 250, 250);
 }
+
+ul 
