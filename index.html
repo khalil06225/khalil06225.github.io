@@ -1,29 +1,52 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <video autoplay muted loop playsinline id="background-video">
-            <source src="hollow.mp4" type="video/mp4">
-        </video>
-    
-        <!-- ✅ Contenu par-dessus la vidéo -->
-        <div class="content">
-            <h1>Mon site</h1>
-        </div>
-        <img src="goku.jpg"> 
-        <h1 id="texte"> Zidi / Khalil</h1>
-        <a href="https://fr.linkedin.com/" target="_blank"><h2>LinkedIn</h2></a>
-        <H1> Competences</H1>
-<ul> 
-    <li>des bases sur c++ </li> 
-    <li> des bases sur html </li>
-    <li>des bases sur bash </li>
-</ul>
-<h1>Formation</h1>
-<ul>
-    <li> Lycee <a href="https://pia.ac-paris.fr/serail/jcms/s2_271354/fr/accueil"> Turgot </a></li>
-    <li><a href="contact.htm"> contact </a></li>
-</ul>
-    </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy's 140</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Billy's 140 Logo" class="logo">
+        <h1>Bienvenue sur Billy's 140</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showContent('menu')">MENU</a></li>
+            <li><a href="#" onclick="showContent('join')">REJOINS NOUS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu" class="content">
+            <h2>Menu</h2>
+            <p>Découvrez notre menu délicieux avec une variété de plats savoureux.</p>
+            <div class="menu-item" onclick="showContent('tasty')">
+                <img src="photo/tasty.png" alt="Tasty" class="menu-image">
+                <p class="menu-caption">Tasty</p>
+            </div>
+        </section>
+        <section id="join" class="content hidden">
+            <h2>Rejoins Nous</h2>
+            <p>Suivez-nous sur les réseaux sociaux pour les dernières nouvelles et offres spéciales.</p>
+            <br><br>
+            <a href="https://www.tiktok.com/@billys_140" target="_blank">
+                <img src="https://img.icons8.com/color/96/tiktok--v1.png" alt="TikTok" style="width: 100px; height: auto; border: none;">
+            </a>
+            <a href="https://www.instagram.com/billys_140/" target="_blank">
+                <img src="https://img.icons8.com/color/96/instagram-new--v1.png" alt="Instagram" style="width: 100px; height: auto; border: none;">
+            </a>
+        </section>
+        <section id="tasty" class="content hidden">
+            <h2>Tasty</h2>
+            <img src="photo/tasty.png" alt="Tasty" style="width: 100%; max-width: 600px; height: auto;">
+            <p>Riz, Sauce maison, poulet crousty, sauce chili thaï</p>
+            <button class="back-button" onclick="showContent('menu')">Retour au Menu</button>
+        </section>
+    </main>
+    <footer>
+        <!-- TikTok logo removed from footer -->
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
